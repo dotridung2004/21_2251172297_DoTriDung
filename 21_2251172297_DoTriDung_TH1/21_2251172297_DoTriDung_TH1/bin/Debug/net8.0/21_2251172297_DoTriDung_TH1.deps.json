@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "21_2251172297_DoTriDung_TH1/1.0.0": {
+        "runtime": {
+          "21_2251172297_DoTriDung_TH1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "21_2251172297_DoTriDung_TH1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
