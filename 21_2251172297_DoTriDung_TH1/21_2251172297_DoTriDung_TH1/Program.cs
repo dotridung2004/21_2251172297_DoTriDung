@@ -9,7 +9,7 @@ class Program
     static int[] maxResults;
     static int threadCount = 4;
 
-    static void Main()
+    static void Main(string[] args)
     {
         int N = 120;
         A = new int[N];
@@ -37,7 +37,7 @@ class Program
     static void InMang()
     {
         Console.WriteLine("Mang A:");
-        Console.WriteLine(string.Join(", ", A));
+        Console.WriteLine(string.Join(",", A));
     }
 
     static void XuLyDaLuong(int N)
@@ -63,16 +63,12 @@ class Program
 
     static void XuLyDoan(int threadIndex, int start, int end)
     {
-        Stopwatch sw = Stopwatch.StartNew();
-
         int localMax = A[start];
         for (int j = start + 1; j < end; j++)
         {
             if (A[j] > localMax)
                 localMax = A[j];
         }
-
-        sw.Stop();
         maxResults[threadIndex] = localMax;
 
         Console.WriteLine($"T{threadIndex + 1}: {localMax} - {DateTime.Now:HH:mm}");

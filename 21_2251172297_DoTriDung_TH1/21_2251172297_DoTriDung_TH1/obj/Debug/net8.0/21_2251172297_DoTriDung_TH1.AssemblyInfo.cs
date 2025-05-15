@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("21_2251172297_DoTriDung_TH1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cf24172819868166b0b05ca9308c5e692d165ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("21_2251172297_DoTriDung_TH1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("21_2251172297_DoTriDung_TH1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
