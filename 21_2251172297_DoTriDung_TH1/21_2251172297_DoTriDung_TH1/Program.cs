@@ -7,14 +7,15 @@ class Program
 {
     static int[] A;
     static int[] maxResults;
-    static int threadCount = 4;
+    static int k = 3;
 
     static void Main(string[] args)
     {
-        int N = 120;
+        int N = 11;
         A = new int[N];
-        maxResults = new int[threadCount];
+        maxResults = new int[k];
         SinhMangNgauNhien(N);
+        A[N - 1] = 1000;
         InMang();
 
         Console.WriteLine("\n--- Bat dau xu ly da luong ---\n");
@@ -30,8 +31,10 @@ class Program
         Random rand = new Random();
         for (int i = 0; i < N; i++)
         {
-            A[i] = rand.Next(1, 1000); 
+            A[i] = rand.Next(1, 100);
+            
         }
+        
     }
 
     static void InMang()
@@ -42,14 +45,14 @@ class Program
 
     static void XuLyDaLuong(int N)
     {
-        int chunkSize = N / threadCount;
+        int chunkSize = N / k;
         List<Thread> threads = new List<Thread>();
 
-        for (int i = 0; i < threadCount; i++)
+        for (int i = 0; i < k; i++)
         {
             int threadIndex = i;
             int start = threadIndex * chunkSize;
-            int end = (threadIndex == threadCount - 1) ? N : start + chunkSize;
+            int end = (threadIndex == k - 1) ? N : start + chunkSize;
 
             Thread t = new Thread(() => XuLyDoan(threadIndex, start, end));
             threads.Add(t);

@@ -3,26 +3,37 @@
 class Program
 {
     static int N = 200;
-    static int a = 4;
-    static int b = 2;
+    static int k = 4;
+    static int h = 2;
     static ConcurrentQueue<int> A = new ConcurrentQueue<int>();
+    static ConcurrentBag<int> allGeneratedValues = new ConcurrentBag<int>();
     static SemaphoreSlim semaphoreWrite = new SemaphoreSlim(1,1);
     static SemaphoreSlim semaphoreRead = new SemaphoreSlim(1, 1);
     static Random rnd = new Random();
     static void Main(string[] args)
     {
         List<Thread> threads = new List<Thread>();
-        for(int i = 0; i < a; i++)
+        for(int i = 0; i < k; i++)
         {
             int threadIndex = i;
             Thread t = new Thread(() => SinhDuLieu(threadIndex));
             threads.Add(t);
             t.Start();
         }
+        for(int i = 0; i < h; i++)
+        {
+            int threadIndex = i;
+            Thread t = new Thread(() => XuLyDuLieu(threadIndex));
+            threads.Add(t);
+            t.Start();
+        }
         Thread.Sleep(20000);
+        Console.WriteLine("\nMang A :");
+        Console.WriteLine(string.Join(",", allGeneratedValues));
         Environment.Exit(0);
 
     }
+    
     static void SinhDuLieu(int d)
     {
         while (true)
@@ -35,6 +46,7 @@ class Program
                 if(A.Count < N)
                 {
                     A.Enqueue(value);
+                    allGeneratedValues.Add(value);
                     Console.WriteLine($"P{d}: {value} - {DateTime.Now:HH:mm}");
                 }
             }
@@ -42,6 +54,8 @@ class Program
             {
                 semaphoreWrite.Release();
             }
+            
+
         }
     }
     static void XuLyDuLieu(int d)

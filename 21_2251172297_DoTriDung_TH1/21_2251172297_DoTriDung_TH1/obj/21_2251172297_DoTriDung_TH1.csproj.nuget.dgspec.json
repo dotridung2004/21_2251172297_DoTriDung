@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1.csproj": {}
+    "D:\\21_2251172297_DoTriDung\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1.csproj": {}
   },
   "projects": {
-    "D:\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1.csproj": {
+    "D:\\21_2251172297_DoTriDung\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1.csproj",
+        "projectUniqueName": "D:\\21_2251172297_DoTriDung\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1.csproj",
         "projectName": "21_2251172297_DoTriDung_TH1",
-        "projectPath": "D:\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1.csproj",
+        "projectPath": "D:\\21_2251172297_DoTriDung\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\obj\\",
+        "outputPath": "D:\\21_2251172297_DoTriDung\\21_2251172297_DoTriDung_TH1\\21_2251172297_DoTriDung_TH1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
